@@ -1,0 +1,60 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0; /* Light background color */
+  }
+  
+  .heading {
+    font-size: 2em;
+    color: #007bff; /* Blue color for the heading */
+    margin-bottom: 20px; /* Space between the heading and the calculator */
+    font-weight: bold;
+  }
+  
+  .calculator {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    width: 250px;
+  }
+  
+  input[type="text"] {
+    grid-column: span 4;
+    padding: 10px;
+    font-size: 1.5em;
+    text-align: right;
+    border-radius: 10px; /* Curved edges */
+    border: 2px solid #007bff; /* Blue border */
+    background-color: white; /* White background */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  }
+  
+  button {
+    padding: 20px;
+    font-size: 1.5em;
+    cursor: pointer;
+    background-color: #007bff; /* Blue background */
+    color: white; /* White text */
+    border: none;
+    border-radius: 10px; /* Curved edges */
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Smooth transitions */
+  }
+  
+  button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+    transform: scale(1.05); /* Slightly enlarge button on hover */
+  }
+  
+  button:active {
+    transform: scale(1); /* Reset scale on click */
+  }
+  
+  button:focus {
+    outline: none; /* Remove the default outline */
+  }
+  
